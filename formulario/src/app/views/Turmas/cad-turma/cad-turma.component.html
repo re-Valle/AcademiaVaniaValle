@@ -1,0 +1,46 @@
+Cadastrando nova turma...
+<h1>Cadastro de Turmas</h1>
+    <div>
+        <mat-form-field appearance="fill" class="id">
+            <mat-label>Identificação</mat-label>
+            <input matInput placeholder="Id" >
+        </mat-form-field>
+    
+    <section>
+        <mat-radio-group class="radio-group">
+        <mat-label>Turno:</mat-label>
+            <mat-radio-button value="1">Manhã</mat-radio-button>
+            <mat-radio-button value="2">Tarde</mat-radio-button>
+            <mat-radio-button value="3">Noite</mat-radio-button>
+          </mat-radio-group>
+          
+        <mat-label>Dias Da Semana:</mat-label>
+            <mat-checkbox class="margin">Domingo</mat-checkbox>
+            <mat-checkbox class="margin">Segunda</mat-checkbox>
+            <mat-checkbox class="margin">Terça</mat-checkbox>
+            <mat-checkbox class="margin">Quarta</mat-checkbox>
+            <mat-checkbox class="margin">Quinta</mat-checkbox>
+            <mat-checkbox class="margin">Sexta</mat-checkbox>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Horário</mat-label><br>
+            Início<input matInput type="time">
+            Fim<input matInput type="time" >
+        </mat-form-field>
+    </section>
+
+        <!– Fazer o auto complete –>
+        <mat-form-field appearance="fill">
+         <mat-label>Curso</mat-label>
+            <mat-select>
+             <mat-option value="one">Ballet</mat-option>
+             <mat-option value="two">Jazz</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="id">
+            <mat-label>R$</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+<button mat-raised-button autofocus routerLink="/turmas">Matricular</button> <button mat-raised-button routerLink="/turmas">Cancelar</button>

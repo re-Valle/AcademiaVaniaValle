@@ -1,0 +1,37 @@
+h1 {
+    font-family: gabriola;
+    font-size: 2.5rem;
+    color:#7e65aa
+}
+
+button {
+    background-color: #7e65aa;
+    font-size: 16px;
+    padding: 2px 20px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    color: #e5e4e4;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+button:hover {opacity: 0.9}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.id {
+    display: flex;
+    margin: 15px 0;
+}
+
+.margin {
+    margin: 0 12px;
+  }

@@ -1,0 +1,75 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened
+    fixedInViewport="true" fixedTopGap="64">    
+        <mat-nav-list class="nav-list">
+            
+    <mat-accordion>
+        <a mat-list-item routerLink="/">
+            <i class="material-icons">
+                home
+            </i>
+            Início
+        </a>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <i class="material-icons">
+                        assignment
+                    </i>
+                    Cadastro
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <a mat-list-item routerLink="/alunos">
+                <i class="material-icons">
+                    person
+                </i>
+                Alunos
+            </a>
+            <a mat-list-item routerLink="/cursos">
+                <i class="material-icons">
+                   stars
+                </i>
+                Cursos
+            </a>
+            <a mat-list-item routerLink="/turmas">
+                <i class="material-icons">
+                   class
+                </i>
+                Turmas
+            </a>
+            <a mat-list-item routerLink="/matriculas">
+                <i class="material-icons">
+                    person_add
+                </i>
+                Matrícula
+            </a>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <i class="material-icons">
+                        paid
+                    </i>
+                    Financeiro
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">
+                    payment
+                </i>
+                Pagamento
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">
+                    assessment
+                </i>
+                Dados
+            </a>
+        </mat-expansion-panel>
+    </mat-accordion>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,58 @@
+<div>
+    <h1>Excluir Aluno</h1>
+    <mat-card>
+        <mat-card-title>Dados Pessoais</mat-card-title><br>
+        <form>
+            <mat-form-field>
+                <input matInput type="text" placeholder="Nome" [value]="aluno.nome" name="nome" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" placeholder="¹CPF" [value]="aluno.cpf" name="cpf" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" placeholder="Data de Nascimento" [value]="aluno.nascimento"
+                    name="nascimento" disabled>
+            </mat-form-field>
+            <label>Sexo:</label>
+            <mat-radio-group labelPosition="after" [value]="aluno.sexo" name="sexo" disabled>
+                <mat-radio-button class="radio" value="Masculino">Masculino</mat-radio-button>
+                <mat-radio-button class="radio" value="Feminino">Feminino</mat-radio-button>
+            </mat-radio-group>
+            <mat-form-field>
+                <input matInput placeholder="²Responsável" [value]="aluno.responsavel" name="responsavel" disabled>
+            </mat-form-field>
+            <div class="obs">
+                ¹Caso não tenha, utilizar do Responsável<br>
+                ²Caso seja menor de idade
+            </div>
+        </form>
+    </mat-card>
+    <br><br>
+    <mat-card>
+        <mat-card-title>Endereço</mat-card-title><br>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="CEP" [value]="aluno.cep" name="cep" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Endereço" [value]="aluno.endereco" name="endereco" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Número" [value]="aluno.numero" name="numero" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Bairro" [value]="aluno.bairro" name="bairro" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Telefone" [value]="aluno.telefone" name="telefone" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Celular" [value]="aluno.celular" name="celular" disabled>
+            </mat-form-field>
+        </form>
+    </mat-card>
+    <button mat-raised-button autofocus (click)="deleteAlunos()">Excluir</button>
+
+    <button mat-raised-button routerLink="/alunos">Cancelar
+    </button>
+</div>

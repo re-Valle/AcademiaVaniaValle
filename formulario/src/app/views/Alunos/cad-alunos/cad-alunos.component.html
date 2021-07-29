@@ -1,0 +1,56 @@
+<div>
+    <h1>Cadastro de Alunos</h1>
+    <mat-card>
+        <mat-card-title>Dados Pessoais</mat-card-title><br>
+        <form>
+            <mat-form-field>
+                <input matInput type="text" placeholder="Nome" [(ngModel)]="aluno.nome" name="nome">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" placeholder="¹CPF" [(ngModel)]="aluno.cpf" name="cpf">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" placeholder="Data de Nascimento" [(ngModel)]="aluno.nascimento"
+                    name="nascimento">
+            </mat-form-field>
+            <label>Sexo:</label>
+            <mat-radio-group labelPosition="after" [(ngModel)]="aluno.sexo" name="sexo">
+                <mat-radio-button class="radio" value="Masculino">Masculino</mat-radio-button>
+                <mat-radio-button class="radio" value="Feminino">Feminino</mat-radio-button>
+            </mat-radio-group>
+            <mat-form-field>
+                <input matInput placeholder="²Responsável" [(ngModel)]="aluno.responsavel" name="responsavel">
+            </mat-form-field>
+            <div class="obs">
+                ¹Caso não tenha, utilizar do Responsável<br>
+                ²Caso seja menor de idade
+            </div>
+        </form>
+    </mat-card>
+    <br><br>
+    <mat-card>
+        <mat-card-title>Endereço</mat-card-title><br>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="CEP" [(ngModel)]="aluno.cep" name="cep">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Endereço" [(ngModel)]="aluno.endereco" name="endereco">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Número" [(ngModel)]="aluno.numero" name="numero">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Bairro" [(ngModel)]="aluno.bairro" name="bairro">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Telefone" [(ngModel)]="aluno.telefone" name="telefone">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Celular" [(ngModel)]="aluno.celular" name="celular">
+            </mat-form-field>
+        </form>
+    </mat-card>
+    <button mat-raised-button autofocus (click)="createAlunos()">Salvar</button> <button mat-raised-button
+        routerLink="/alunos">Cancelar</button>
+</div>

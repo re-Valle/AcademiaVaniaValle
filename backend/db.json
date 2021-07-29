@@ -1,0 +1,60 @@
+{
+  "alunos": [
+    {
+      "nome": "Vania Lucia Valle dos Reis",
+      "cpf": 93314159749,
+      "nascimento": 9011970,
+      "sexo": "Feminino",
+      "responsavel": "",
+      "cep": "26521-116",
+      "endereco": "Estrada Marechal Castelo Branco, 1654",
+      "numero": "1654",
+      "bairro": "Nossa Senhora de Fátima",
+      "telefone": "2137623813",
+      "celular": "21964329428",
+      "id": 2
+    },
+    {
+      "nome": "Neide Maria Reis do Valle",
+      "cpf": "",
+      "nascimento": 31101944,
+      "sexo": "Feminino",
+      "responsavel": "",
+      "cep": "26521-116",
+      "endereco": "Estrada Marechal Castelo Branco, 1654",
+      "numero": "1654",
+      "bairro": "Nossa Senhora de Fátima",
+      "telefone": "2137623813",
+      "celular": "21989153813",
+      "id": 3
+    },
+    {
+      "nome": "Camila Rodrigues Silva Bizerra",
+      "cpf": 13143045779,
+      "nascimento": 4111997,
+      "sexo": "Feminino",
+      "responsavel": "",
+      "cep": "26520770",
+      "endereco": "Rua Marquês Canário",
+      "numero": "595",
+      "bairro": "Nossa Senhora de Fátima",
+      "telefone": "21970360637",
+      "celular": "",
+      "id": 5
+    },
+    {
+      "nome": "Rennan Valle Cavalcanti dos Reis",
+      "cpf": "",
+      "nascimento": "",
+      "sexo": "Masculino",
+      "responsavel": "",
+      "cep": "",
+      "endereco": "",
+      "numero": "",
+      "bairro": "",
+      "telefone": "",
+      "celular": "",
+      "id": 6
+    }
+  ]
+}

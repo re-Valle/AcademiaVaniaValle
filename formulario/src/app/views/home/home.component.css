@@ -1,0 +1,17 @@
+.home .title {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.home .subtitle {
+    font-size: 1.1rem;
+    
+}
+
+.background {
+    clear: both;
+    background-size: 100%;
+    min-height: 400px;
+    
+}
